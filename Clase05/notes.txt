@@ -1,0 +1,24 @@
+Artillery: Es un toolkit de performance que prueba nuestro servidor y corrobora su fiabilidad en un entorno real.
+Niveles: Permitirá priorizar "que es importante mostrar"
+
+Cluster:
+
+Estrategia: Escalabilidad
+Vertical: Mi servidor necesita ser más potente y necesito mejorar el hardware para tener un servidor más potente.
+
+Horizontal: Dividamos las tareas en multi-instancias de servidores que alojen el aplicativo y se apoyen 
+--> Nodos: Varios servidores
+--> Balanceador de carga: Redirige el tráfico a los nodos disponibles
+
+Módulo Nativo de Cluster:
+-Def: 
+
+Docker: Servicio en la nube, que permite crear y ejecutar contenedores de aplicaciones en un entorno de desarrollo, pruebas.
+-Imagen:  Es una plantilla que contiene todo lo necesario para ejecutar una aplicación.
+-Contenedor: Es una instancia de una imagen que se ejecuta en un entorno aislado.
+
+Cloud Computing:  Es un modelo de servicio de computación en la nube que permite acceder a recursos de computación, almacenamiento y red de manera remota y escalable.
+
+Comandos:
+-Compilación de proyecto: docker build -t docker .
+-Ejecuar aplicación: docker run -p 8080:8080 docker_test

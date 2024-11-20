@@ -1,0 +1,22 @@
+Test y Mocks
+
+TDD: Test-Driven Development (Desarrollo orientado a pruebas)
+- Escribir pruebas fallidas
+- Hacer que las pruebas pasen
+- Refactorizar el código
+Desarrollo Preventivo a partir de Mocks
+- Faker.js
+
+3 principales errores.
+-De compilación: 
+-De ejecución: ocurre cuando el código si logra compilarse, pero a lo largo de su trabajo ocurre un error, usualmente no controlado.
+-De lógica (Lógicos): Ocurre cuando el código compila y se ejecuta, pero, el resultado no es el esperado.
+
+Mock
+-Se toma como una "imitación" de un dato real, es útil para crear datos supuestos.
+-Se deben crear bajo los siguientes escenarios:
+--> Generar usuarios falsos o logins y sesiones
+--> Generar productos de prueba en un ecommerce
+--> NPCs o personajes para algún videojuego
+--> Conjuntos de estadisticas para módulos de análisis
+--> Conjuntos de coordenadas para sistemas de geolocalización

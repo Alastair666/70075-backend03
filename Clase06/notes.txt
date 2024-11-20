@@ -1,0 +1,53 @@
+Conceptos:
+-DockerHub
+-Kubernets
+
+
+
+Pasos para publicar una imagen de Docker:
+1.- 
+
+
+kubectl: Cliente de kubernets nos permitirá ejecutar comandos en nuestro CLI.
+-Comand:
+curl.exe -LO "https://dl.k8s.io/release/v1.25.0/bin/windows/amd64/kubectl.exe"
+
+-Minikube: Permite levantar un cluster de kubernets en nuestra maquina local.
+
+
+------------------------------------------------------------------------
+# instalar minikube:
+
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+# comprobar la version:
+
+“minikube version”
+
+# instalacion de kubectl
+
+curl.exe -LO “https://dl.k8s.io/release/v1.25.0/bin/windows/amd64/kubectl.exe”
+# hacer la imagen de docker:
+
+“docker build -t ejemplo-k8s-express:latest .”
+
+“minikube start”
+
+# subir la imagen a dockerhub
+
+“docker tag ejemplo-k8s-express:latest omaniasdocker/ejemplo-k8s-express:latest”
+
+“docker push omaniasdocker/ejemplo-k8s-express:latest”
+
+Cargar la imagen a Minikube:
+
+“minikube image load ejemplo-k8s-express:latest”
+
+# ejecutar los archivos
+
+kubectl apply -f deployment.yaml –validate=false
+
+kubectl apply -f service.yaml –validate=false
+
+kubectl get pods
+
+kubectl get services

@@ -1,0 +1,23 @@
+Rendimiento en producción:
+1.- Utilizar funciones asíncronas.
+-- Para evitar que la aplicación se quede pasmada
+2.- Realiza un correcto "loggeo" (console.log('some'))
+-- Para poder depurar y ver el estado de la aplicación
+3.- Usa variables de entorno NODE_ENV = production
+4.- Clusterizar nuestra aplicación
+5.- Configurar el servidor para que éste se reinicie automáticamente
+-- Manejador de procesos (PM2)
+6.- Manejar correctamente los errores
+7.- Realizar balanceos de carga
+8.- Realizar comprensión
+-- Permite que nuestros archivos puedan viajar a travez de la red.
+9.- Utilizar un proxy inverso (punto intermedio entre el servidor y el cliente)
+-- Ventajas: 
+--> Anonimato de servidores, generando un punto de identificación general y redireccionamiento a los servidores
+--> Realizar carga de archivos estáticos, para reducir la carga de trabajo al servidor.
+--> Realizar balances de carga y compresiones
+
+
+Compresión con Brotli
+
+Middleware para manejo de errores

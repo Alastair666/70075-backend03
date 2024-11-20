@@ -1,0 +1,48 @@
+Vulnerabilidades:
+- HW
+- SW
+- Procedimientos
+- Humanas
+
+OWAZAP
+
+A02:2021 - Cryptographic Failures (Se aplica cuando:)
+- Se utiliza algún algoritmo cifrado obsoleto
+- Cuando el proceso del hasheo tiene intervención directa del desarrollador (el cual en ocasiones puede no tener conocimientos sólidos de procesos de seguridad)
+
+A03:2021 - Injection (Se aplica cuando:)
+- La user-data no fue validada correctamente (un req.body que se procesa directo)
+- Un query dinamico sin validación contextual
+- Una petición con parametros malintencionados para poder realizar una consulta a la BD.
+
+A04:2021 - Insecure (Se aplica cuando:)
+- Has dejado un campo password en texti plano sin ocultar
+- Permitiste que la base agregara un producto en -100 de stock
+- No se aplicaron patrones de diseño
+
+A05:2021 - Security Misconfiguration (Se aplica cuando:)
+- Tenemos algún descuido al momento de configurar el aplicativo, modulos o servicios en la nube.
+
+(railway.app) : 
+
+A06:2021
+
+A07:2021 - Identification and Authentication Failures (Se aplica cuando:)
+
+A08:2021 - Software and Data Integrity Failures (Se aplica cuando:)
+- Se utilizan bibliotecas de terceros sin revisión de seguridad
+*Recuerda que cada modulo que agregamos significa hacer dependiente a nuestra aplicación de lo que ocurra con dicho modulo.
+
+A09:2021 - Logging and Monitoring Failures (Se aplica cuando:)
+- No tenemos un sistema de monitoreo de API's para rastrear actividad sospechosa
+- Mostramos logs demasiado genericos.
+- Mostramos logs demasiado explicitos, brindando el stack trace de manera general y no soo cuando lo solicitemos.
+- Nuestros logs quedan de manera local y no hay forma de exportarlos para filtrarlos por prioridad.
+
+webhub: aquella herramienta que permite conectar nuestra aplicación con un tablero de control.
+(Ejemplo: Solid)
+
+A10:2021 - Server Side Request Forgery (Se aplica cuando:)
+- El servidor no tiene un control de redirecciones o restricción de URL por expresión regular.
+- Cuando tenemos un sistema interno de callbacks, los cuales también pueden desembocar en redirecciones a recursos adicionales.
+

@@ -1,0 +1,14 @@
+Winston Logger
+-Def: es un logger diseñado para poder trabajar con multitransportes para nuestra aplicación, utiliza dos conceptos importantes.
+- Transporte: Sistema de almacenamiento de nuestros logs
+- Nivel : Sistema de prioridad que tiene cada log, para definir si un log tiene autorización para pasar por un transporte
+
+-Niveles:
+
+-Instalación: npm install winston
+
+
+Artillery
+-Def: es un framework de pruebas de carga, permite realizar pruebas de rendimiento y  de carga a nuestra aplicación.
+-Comando:
+--> artillery es muy potente, sin embargo tambien puede evitarnos realizar operaciones muy copmlejas.

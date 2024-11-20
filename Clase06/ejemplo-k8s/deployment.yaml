@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ejemplo-k8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ejemplo-k8s
+  template:
+    metadata:
+      labels:
+        app: ejemplo-k8s
+    spec:
+      containers:
+      - name: ejemplo-k8s
+        image: ejemplo-k8s:latest
+        ports:
+        - containerPort: 3000
