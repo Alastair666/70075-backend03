@@ -1,0 +1,7 @@
+Testing de Integración: El objetivo de este test es verificar que la aplicación se integre correctamente con la base de datos y
+
+Supertest: Es una librería que nos permitira ejecutar peticiones HTTP
+
+
+React:
+-Libreria Ant Design (Revisar)

@@ -1,0 +1,8 @@
+
+
+
+Mocha:
+-Framework para Node jS.
+--Assert: Permitira validaciones de manera estricta
+--archivo.test.js: archivo de pruebas (definido por su sub extensión)
+--describe: Definir distintos contextos de pruebas
